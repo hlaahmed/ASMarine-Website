@@ -28,7 +28,6 @@
     "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css --source-map true",
     "postinstall": "gulp default"
-
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,7 +48,7 @@
     "typescript": "3.9.5"
   },
   "devDependencies": {
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-append-prepend": "1.0.8"
   }
 }
