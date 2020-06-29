@@ -286,53 +286,75 @@ function LandingPage() {
 
 
 
-                <SectionCarousel></SectionCarousel>
+        <SectionCarousel></SectionCarousel>
 
         <div className="section section-dark text-center" style={{ backgroundColor: '#0a63b6' }}>
           <Container>
 
 
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h1 className="title">Teams</h1>
-                <h5 className="description">
-
-                </h5>
-                <br />
-                {/*<Button
-                  className="btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  See Details
-                </Button>*/}
+  
+              <Col className="ml-auto mr-auto" >
+                <h2 className="title" >Teams</h2>
               </Col>
-            </Row>
-            <br />
-            <br />
+    
 
-            <Row>
-              <Col md="3">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+            <Row style={{ padding: 0, margin: 0 }}>
+              <Col className="ml-auto mr-auto"  md="3">
+                <Card className="card-profile card-plain" style={{ padding: 0, margin: 0 }}>
+                  <div className="">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/Youssef.jpg")}
+                        src={require("assets/img/faces/samer.jpg")}
+                      />
+                    </a>
+                  </div>
+                  <CardBody >
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author" style={{ padding: 0, margin: 0 }}>
+                        <CardTitle tag="h4">Samer Elda3er</CardTitle>
+                        <h6 className="card-category">Team Leader</h6>
+                      </div>
+                    </a>
+                    <p className="card-description text-center" style={{ padding: 0, margin: 0 }}>
+                    "Keep your enemies close and your sub-teams closer".
+                    <br></br>
+It’s funny, because the sub teams are right next to me. I live by my own quotes as you can see.
+                    </p>
+                  </CardBody>
+                  <CardFooter className="text-center" >
+
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="3">
+                <Card className="card-profile card-plain"  style={{ padding: 0, margin: 0 }}>
+                  <div >
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        src={require("assets/img/software.jpg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Yousef El Mansy</CardTitle>
-                        <h6 className="card-category">Former Software Team Leader</h6>
+                        <CardTitle tag="h4">Software Team</CardTitle>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      One of the hardest aspects of the project is the integration of several domains especially the integration of Software and Hardware and getting both to work smoothly, overall i believe it is such interdisciplinary projects that impose a real challenge to us as engineers and i was more than happy to work on this project.
-                    </p>
+                    We're responsible for  designing and testing the vehicle software architecture which can be broken down into perception modules, SLAM modules, control modules and vehicle simulations                    </p>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
@@ -344,31 +366,27 @@ function LandingPage() {
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
-                </Card>
+                </Card >
               </Col>
               <Col md="3">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                <Card className="card-profile card-plain"  style={{ padding: 0, margin: 0 }}>
+                  <div >
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/Amr.jpg")}
+                        src={require("assets/img/electrical.jpg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Amr Abdelghany</CardTitle>
-                        <h6 className="card-category">Former Software Member</h6>
+                        <CardTitle tag="h4">Electrical Team</CardTitle>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      It was the best experience of my life.
-                      Meeting the teams, organizers and sponsors was amazing. I will definitely come back.
+                    We're responsible for electrical & electronics aspects of the vehicle like power management, safety, PCB design, fabrication, wiring and electric kit design
                     </p>
-
-
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
@@ -382,24 +400,24 @@ function LandingPage() {
                 </Card>
               </Col>
               <Col md="3">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                <Card className="card-profile card-plain"  style={{ padding: 0, margin: 0 }}>
+                  <div >
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/Perihane.jpg")}
+                        src={require("assets/img/mechanical.jpg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Perihane Youssef</CardTitle>
-                        <h6 className="card-category">Former Software Member</h6>
+                        <CardTitle tag="h4">Mechanical Team</CardTitle>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      I was really passionate about machine vision and deep learning, i believe i acquired awesome knowledge in the field and i'm still advising the team on the topic, plus RoboSub's competitive atmosphere is really awesome and it was a pleasure being part of such community                    </p>
+                    We're responsible for vehicle frame design, electronics sealing, vehicle manufacturing, assembly and fluid dynamic analysis
+                    </p>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
@@ -415,24 +433,23 @@ function LandingPage() {
               </Col>
 
               <Col md="3">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                <Card className="card-profile card-plain"  style={{ padding: 0, margin: 0 }}>
+                  <div >
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/Pance3.jpg")}
+                        src={require("assets/img/business.jpg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Pancé Ibrahim</CardTitle>
-                        <h6 className="card-category">Former Project Manager/Business Team Leader</h6>
+                        <CardTitle tag="h4">Business Team</CardTitle>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      Managing a newly founded team is rather a challenging experience, but with hard-work, discipline and team work; success was the outcome.
+                    We're responsible for the managerial aspects of the team like finances, sponsors, media, IT and supply chain activities
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
