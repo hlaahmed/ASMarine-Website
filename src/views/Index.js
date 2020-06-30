@@ -38,6 +38,8 @@ import SectionCarousel from "views/index-sections/SectionCarousel.js";
 import TeamsSection from "views/index-sections/TeamsSection.js";
 import HallOfFame from "views/index-sections/HallOfFame.js"
 import Sponsors from "views/index-sections/Sponsors.js";
+import ContactUs from "views/index-sections/ContactUs.js";
+import YoutubeSection from "views/index-sections/YoutubeSection.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -76,7 +78,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
 
-                <h2 className="title">Video Goes here</h2>
+                <YoutubeSection></YoutubeSection>
               </Col>
             </Row>
             <Row>
@@ -87,10 +89,6 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Founded</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
-                    </p>
                   </div>
                 </div>
               </Col>
@@ -101,10 +99,6 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Project</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
 
                   </div>
                 </div>
@@ -116,10 +110,7 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Members</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
-                    </p>
+                 
 
                   </div>
                 </div>
@@ -131,10 +122,6 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Publications</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
                   </div>
                 </div>
               </Col>
@@ -148,54 +135,9 @@ function LandingPage() {
         <SectionCarousel></SectionCarousel>
         <TeamsSection></TeamsSection>
         <Sponsors></Sponsors>
-        <div className="section landing-section">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Contact Us</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Name</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+        
+        <ContactUs></ContactUs>
+
       </div>
       <DemoFooter />
     </>
