@@ -10,7 +10,7 @@ class Map extends React.Component {
 
     componentDidMount() {
 
-        var place = [31.278523, 30.064959];
+        var place = [31.279511, 30.06375];
         var realPlace = ol.proj.fromLonLat(place);
 
         var point = new ol.geom.Point(realPlace);
@@ -38,7 +38,7 @@ class Map extends React.Component {
                     style: new ol.style.Style({
                         image: new ol.style.Circle({
                             radius: 9,
-                            fill: new ol.style.Fill({ color: 'red' })
+                            fill: new ol.style.Fill({ color: 'blue' })
                         })
                     })
                 }),

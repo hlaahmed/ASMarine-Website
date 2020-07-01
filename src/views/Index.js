@@ -60,7 +60,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title">ABOUT US</h2>
-                <h5 className="description">
+                <h5 className=" ">
                   ASmarine Team was founded in 2019 by a group of robotics researchers to create a research center and compete in RoboSub. The team focuses on hands-on implementation of academic knowledge presented in educational institutions to present innovative solutions for Marin Industry. ASmarine aspires to shape a Marine Industrial revolution and combine Engineering Robotics along with Marine Science to enhance the world’s economy and face the global crises that threaten the planet’s resources and Marine life.
                 </h5>
                 <br />

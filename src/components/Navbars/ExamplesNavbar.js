@@ -106,7 +106,7 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
+              <NavLink to="/auv" tag={Link}>
                 AUV Overview
               </NavLink>
             </NavItem>
