@@ -50,9 +50,7 @@ function LandingPageHeader() {
               <i className="fa fa-play" />
               Watch video
             </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Read More
-            </Button>
+
           </div>
         </Container>
       </div>

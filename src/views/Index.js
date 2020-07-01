@@ -40,6 +40,7 @@ import HallOfFame from "views/index-sections/HallOfFame.js"
 import Sponsors from "views/index-sections/Sponsors.js";
 import ContactUs from "views/index-sections/ContactUs.js";
 import YoutubeSection from "views/index-sections/YoutubeSection.js";
+import Map from "views/index-sections/Map.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -129,6 +130,7 @@ function LandingPage() {
           </Container>
         </div>
 
+                
 
         <HallOfFame></HallOfFame>
 
@@ -137,7 +139,9 @@ function LandingPage() {
         <Sponsors></Sponsors>
         
         <ContactUs></ContactUs>
-
+        <Container>
+        <Map></Map>
+        </Container>
       </div>
       <DemoFooter />
     </>

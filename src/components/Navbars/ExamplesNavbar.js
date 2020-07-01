@@ -70,62 +70,78 @@ function ExamplesNavbar() {
             </a>
           </NavbarBrand>
 
+          <button
+            aria-expanded={navbarCollapse}
+            className={classnames("navbar-toggler navbar-toggler", {
+              toggled: navbarCollapse,
+            })}
+            onClick={toggleNavbarCollapse}
+          >
+            <span className="navbar-toggler-bar bar1" />
+            <span className="navbar-toggler-bar bar2" />
+            <span className="navbar-toggler-bar bar3" />
+          </button>
         </div>
       </Container>
       <Container>
-
-        <Nav className="ml-auto mr-auto text-center" navbar horizontal>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Home
+        <Collapse
+          className="justify-content-end"
+          navbar
+          isOpen={navbarCollapse}
+        >
+          <Nav className="ml-auto mr-auto text-center" navbar horizontal>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Home
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              About Us
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                About Us
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Hall Of Fame
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Hall Of Fame
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              AUV Overview
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                AUV Overview
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              News
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                News
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Teams
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Teams
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Publications
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Publications
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Sponsors
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Sponsors
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Robosub
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Robosub
               </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/index" tag={Link}>
-              Contact Us
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                Contact Us
               </NavLink>
-          </NavItem>
-        </Nav>
+            </NavItem>
+          </Nav>
+        </Collapse>
       </Container>
       <Container className="float-right">
         <Nav horizontal>
