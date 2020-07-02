@@ -31,7 +31,7 @@ import {
 } from "reactstrap";
 
 // core components
-import { Tick, OBJModel } from 'react-3d-viewer';
+import { Tick, OBJModel,MTLModel } from 'react-3d-viewer';
 
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
@@ -72,7 +72,15 @@ function LandingPage() {
                     <Container >
                         <Row>
                             <Col className="ml-auto mr-auto" md="6">
-                                <OBJModel src={require("assets/idk.obj")} texPath="" />
+                                
+                                <MTLModel 
+
+
+
+        texPath="./src/lib/model/"
+        mtl={require("assets/v1.mtl")}
+        src={require("assets/v1.obj")}
+     />
                             </Col>
                         </Row>
                     </Container>
