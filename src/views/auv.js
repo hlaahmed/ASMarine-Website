@@ -31,8 +31,8 @@ import {
 } from "reactstrap";
 
 // core components
-import { Tick, OBJModel,MTLModel } from 'react-3d-viewer';
-
+import { Tick, OBJModel, MTLModel, GLTFModel, AmbientLight, DirectionLight, DAEModel } from 'react-3d-viewer';
+import ReactThreeFbxViewer from 'react-three-fbx-viewer';
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
@@ -43,6 +43,7 @@ import Sponsors from "views/index-sections/Sponsors.js";
 import ContactUs from "views/index-sections/ContactUs.js";
 import YoutubeSection from "views/index-sections/YoutubeSection.js";
 import Map from "views/index-sections/Map.js";
+
 
 
 function LandingPage() {
@@ -58,48 +59,45 @@ function LandingPage() {
             <ExamplesNavbar />
             <div className="main" style={{ backgroundColor: '#0a63b6' }}>
                 <div className="Section text-center">
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
 
-                <div className="Section">
+                <div  >
                     <Container >
                         <Row>
                             <Col className="ml-auto mr-auto" md="6">
-                                
-                                <MTLModel 
-
-
-
-        texPath="./src/lib/model/"
-        mtl={require("assets/v1.mtl")}
-        src={require("assets/v1.obj")}
-     />
+                                <div >
+                                    <GLTFModel
+                                        src={require("assets/decimatedauv.gltf")} >
+                   
+                                    </GLTFModel>
+                                </div>
                             </Col>
                         </Row>
                     </Container>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
 
                 </div>
             </div>
