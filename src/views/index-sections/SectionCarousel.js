@@ -11,7 +11,9 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from "reactstrap";
-import Background from "assets/img/idk2.jpg";
+import Background from "assets/img/carousel/idk2.jpg";
+import 'idk.css'; 
+
 var Blur = require('react-blur').default;
 var radius = "5px";
 var ydenomi;
@@ -27,34 +29,66 @@ var sectionStyle = {
 
 const items = [
   {
-    src: require("assets/img/idk3.jpg"),
+    src: require("assets/img/carousel/idk1.jpg"),
     altText: "Gamed",
-    caption: "Gamed",
+    caption: "ASmarine celebrates its first successful participation in RoboSub and fulfilling static judging criteria.",
+    date: "8/8/2019",
   },
   {
-    src: require("assets/img/idk1.jpg"),
-    altText: "Gamed tany",
-    caption: "Gamed khalis",
-  },
-  {
-    src: require("assets/img/idk2.jpg"),
+    src: require("assets/img/carousel/idk3.jpg"),
     altText: "gamed khalis",
-    caption: "Gamed tany",
+    caption: " ASmarine engineers start testing their vehicle at Transdec and the atmosphere is chilling!!!",
+    date: "3/8/2019",
+  }, {
+    src: require("assets/img/carousel/idk4.jpg"),
+    altText: "gamed khalis",
+    caption: "ASmarine wins Teledyne grant for research projects among 5 winners from different countries and gets a PathFinder DVL",
+    date: "30/4/2020",
+  }, {
+    src: require("assets/img/carousel/idk5.jpg"),
+    altText: "gamed khalis",
+    caption: "ASmarine's up for a new season, now is your chance to dive in!! Submit your application and join us now.",
+    date: "8/8/2019",
+  }, {
+    src: require("assets/img/carousel/idk6.jpg"),
+    altText: "gamed khalis",
+    caption: "Valeo becomes an ASmarine partner and ASmarine receives a technical mentorship program",
+    date: "10/10/2019",
+  }, {
+    src: require("assets/img/carousel/idk7.jpg"),
+    altText: "gamed khalis",
+    caption: "ASmarine joins the Maker Faire at the smart village to introduce youngsters to underwater technologies and motivate future robotics enthusiasts",
+    date: "10/9/2019",
   },
 ];
 const itemsBlurred = [
   {
-    src: require("assets/img/idk3-blurred.jpg"),
+    src: require("assets/img/carousel/idk1-blurred.jpg"),
     altText: "Gamed",
     caption: "Gamed",
   },
   {
-    src: require("assets/img/idk1-blurred.jpg"),
-    altText: "Gamed tany",
-    caption: "Gamed khalis",
+    src: require("assets/img/carousel/idk3-blurred.jpg"),
+    altText: "gamed khalis",
+    caption: "Gamed tany",
   },
   {
-    src: require("assets/img/idk2-blurred.jpg"),
+    src: require("assets/img/carousel/idk4-blurred.jpg"),
+    altText: "gamed khalis",
+    caption: "Gamed tany",
+  },
+  {
+    src: require("assets/img/carousel/idk5-blurred.jpg"),
+    altText: "gamed khalis",
+    caption: "Gamed tany",
+  },
+  {
+    src: require("assets/img/carousel/idk6-blurred.jpg"),
+    altText: "gamed khalis",
+    caption: "Gamed tany",
+  },
+  {
+    src: require("assets/img/carousel/idk7-blurred.jpg"),
     altText: "gamed khalis",
     caption: "Gamed tany",
   },
@@ -81,7 +115,7 @@ function SectionCarousel() {
   const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
-    
+
   };
   return (
     <>
@@ -108,19 +142,20 @@ function SectionCarousel() {
                   onClickHandler={goToIndex}
                 />
                 {items.map((item) => {
-                                    ydenomi=item.src;
-                                    console.log(items[activeIndex]);
+                  ydenomi = item.src;
+                  console.log(items[activeIndex]);
                   return (
-                    <CarouselItem
+                    <CarouselItem  
                       onExiting={onExiting}
                       onExited={onExited}
                       key={item.src}
                     >
-            
+
                       <img src={item.src} alt={item.altText} />
+
                       <CarouselCaption
-                        captionText={item.caption}
-                        captionHeader=""
+                        captionText={item.date}
+                        captionHeader={item.caption}
                       />
                     </CarouselItem>
                   );
@@ -131,7 +166,7 @@ function SectionCarousel() {
                   href="#pablo"
                   onClick={(e) => {
                     e.preventDefault();
-                    
+
                     previous();
                   }}
                   role="button"
