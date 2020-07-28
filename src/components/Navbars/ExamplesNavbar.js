@@ -15,7 +15,7 @@ import {
   Nav,
   Container,
 } from "reactstrap";
-
+import { Link as Linko, animateScroll as scroll } from "react-scroll";
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -92,17 +92,26 @@ function ExamplesNavbar() {
           <Nav className="ml-auto mr-auto text-center" navbar horizontal>
             <NavItem>
               <NavLink to="/index" tag={Link}>
+
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                About Us
+
+                <Linko to="sectionaboutus" activeClass="active" spy={true} smooth={true}>
+
+                  About Us
+              </Linko>
               </NavLink>
+
             </NavItem>
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                Hall Of Fame
+                <Linko to="sectionhalloffame" activeClass="active" spy={true} smooth={true}>
+                  Hall Of Fame
+
+              </Linko>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -112,32 +121,54 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                News
+
+                <Linko to="sectioncarousel" activeClass="active" spy={true} smooth={true}>
+
+                  News
+              </Linko>
+              </NavLink>
+
+            </NavItem>
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                <Linko to="sectionteams" activeClass="active" spy={true} smooth={true}>
+                  Teams
+              </Linko>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                Teams
+                <Linko to="publicationssection" activeClass="active" spy={true} smooth={true}>
+
+                  Publications
+                </Linko>
               </NavLink>
             </NavItem>
+
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                Publications
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
-                Sponsors
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
+              <Linko to="robosubsection" activeClass="active" spy={true} smooth={true}>
+
                 Robosub
+                </Linko>
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink to="/index" tag={Link}>
+                <Linko to="sectionsponsors" activeClass="active" spy={true} smooth={true}>
+                  Sponsors
+              </Linko>
               </NavLink>
             </NavItem>
             <NavItem>
+
+
               <NavLink to="/index" tag={Link}>
-                Contact Us
+                <Linko to="sectioncontactus" activeClass="active" spy={true} smooth={true}>
+
+                  Contact Us
+                </Linko>
               </NavLink>
             </NavItem>
           </Nav>

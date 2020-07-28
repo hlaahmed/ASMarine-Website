@@ -143,7 +143,7 @@ function SectionCarousel() {
                 />
                 {items.map((item) => {
                   ydenomi = item.src;
-                  console.log(items[activeIndex]);
+                  //console.log(items[activeIndex]);
                   return (
                     <CarouselItem  
                       onExiting={onExiting}

@@ -29,6 +29,7 @@ import {
   Col,
   UncontrolledCarousel,
 } from "reactstrap";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -40,6 +41,8 @@ import HallOfFame from "views/index-sections/HallOfFame.js"
 import Sponsors from "views/index-sections/Sponsors.js";
 import ContactUs from "views/index-sections/ContactUs.js";
 import YoutubeSection from "views/index-sections/YoutubeSection.js";
+import RobosubSection from "views/index-sections/RobosubSection.js";
+import PublicationsSection from "views/index-sections/PublicationsSection.js";
 import Map from "views/index-sections/Map.js";
 
 function LandingPage() {
@@ -56,15 +59,16 @@ function LandingPage() {
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">ABOUT US</h2>
-                <h5 className=" ">
-                  ASmarine Team was founded in 2019 by a group of robotics researchers to create a research center and compete in RoboSub. The team focuses on hands-on implementation of academic knowledge presented in educational institutions to present innovative solutions for Marin Industry. ASmarine aspires to shape a Marine Industrial revolution and combine Engineering Robotics along with Marine Science to enhance the world’s economy and face the global crises that threaten the planet’s resources and Marine life.
+          <div id="sectionaboutus">
+            <Container>
+              <Row>
+                <Col className="ml-auto mr-auto" md="8">
+                  <h2 className="title">ABOUT US</h2>
+                  <h5 className=" ">
+                    ASmarine Team was founded in 2019 by a group of robotics researchers to create a research center and compete in RoboSub. The team focuses on hands-on implementation of academic knowledge presented in educational institutions to present innovative solutions for Marin Industry. ASmarine aspires to shape a Marine Industrial revolution and combine Engineering Robotics along with Marine Science to enhance the world’s economy and face the global crises that threaten the planet’s resources and Marine life.
                 </h5>
-                <br />
-                {/*<Button
+                  <br />
+                  {/*<Button
                   className="btn-round"
                   color="info"
                   href="#pablo"
@@ -72,75 +76,90 @@ function LandingPage() {
                 >
                   See Details
                 </Button>*/}
-              </Col>
-            </Row>
-            <br />
-            <br />
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
+                </Col>
+              </Row>
+              <br />
+              <br />
+              <Row>
+                <Col className="ml-auto mr-auto" md="8">
 
-                <YoutubeSection></YoutubeSection>
-              </Col>
-            </Row>
-            <Row>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <h3 className="title">2019</h3>
+                  <YoutubeSection></YoutubeSection>
+                </Col>
+              </Row>
+              <Row>
+                <Col md="3">
+                  <div className="info">
+                    <div className="icon icon-info">
+                      <h3 className="title">2019</h3>
+                    </div>
+                    <div className="description">
+                      <h4 className="info-title">Founded</h4>
+                    </div>
                   </div>
-                  <div className="description">
-                    <h4 className="info-title">Founded</h4>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <h3 className="title">2</h3>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Project</h4>
+                </Col>
+                <Col md="3">
+                  <div className="info">
+                    <div className="icon icon-info">
+                      <h3 className="title">2</h3>
+                    </div>
+                    <div className="description">
+                      <h4 className="info-title">Project</h4>
 
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <h3 className="title">26</h3>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Members</h4>
-                 
+                </Col>
+                <Col md="3">
+                  <div className="info">
+                    <div className="icon icon-info">
+                      <h3 className="title">26</h3>
+                    </div>
+                    <div className="description">
+                      <h4 className="info-title">Members</h4>
 
+
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <h3 className="title">2</h3>
+                </Col>
+                <Col md="3">
+                  <div className="info">
+                    <div className="icon icon-info">
+                      <h3 className="title">2</h3>
+                    </div>
+                    <div className="description">
+                      <h4 className="info-title">Publications</h4>
+                    </div>
                   </div>
-                  <div className="description">
-                    <h4 className="info-title">Publications</h4>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
 
-                
 
-        <HallOfFame></HallOfFame>
+        <div id="sectionhalloffame">
+          <HallOfFame></HallOfFame>
+        </div>
 
-        <SectionCarousel></SectionCarousel>
-        <TeamsSection></TeamsSection>
-        <Sponsors></Sponsors>
-        
+        <div id="sectioncarousel">
+          <SectionCarousel></SectionCarousel>
+        </div>
+        <div id="sectionteams">
+          <TeamsSection></TeamsSection>
+        </div>
+        <div id="publicationssection">
+          <PublicationsSection></PublicationsSection>
+        </div>
+        <div id="robosubsection">
+          <RobosubSection></RobosubSection>
+        </div>
+        <div id="sectionsponsors">
+          <Sponsors></Sponsors>
+        </div>
+        <div id="sectioncontactus">
         <ContactUs></ContactUs>
+        </div>
         <Container>
-        <Map></Map>
+          <Map></Map>
         </Container>
       </div>
       <DemoFooter />
