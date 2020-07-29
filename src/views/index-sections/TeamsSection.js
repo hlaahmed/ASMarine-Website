@@ -171,7 +171,7 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                                 className=" btn-neutral ml-1"
                                 color="link"
                                 href="#pablo"
-                                onClick={() => window.open("https://www.linkedin.com/in/yousefmansy/", "_blank")}                    >
+                                id="toggler4">
                                 Learn More
                                     </Button>
                         </Col>
@@ -352,6 +352,131 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                             </CardGroup>
                         </Col>
                     </UncontrolledCollapse>
+                    
+                    <UncontrolledCollapse toggler="#toggler4" >
+
+
+                        <Col className="ml-auto mr-auto" >
+                            <h2 className="title" >Software Team</h2>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="3">
+                            <Card inverse className="card-avatar">
+                                <CardImg src={require("assets/img/team/Software/gabry.webp")} alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle style={{ fontSize: "20px" }}>Ahmed Gabry</CardTitle>
+                                    <CardSubtitle>Software Team Leader</CardSubtitle>
+                                    <CardText>4th Year Software Engineering Student</CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+
+                            <CardGroup >
+
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/Yasmine.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Yasmine Aly</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/AhmedNasr.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Ahmed Nasr</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/SalmaAlaa.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Salma Alaa</CardTitle>
+                                        <CardSubtitle>SoftwareTeam Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/AbdelrahmanBishr.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Abdelrahman Bishr</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/SalmaDiaa.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Salma Diaa</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/HabibaMohamed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Habiba Mahmoud</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                </CardGroup>
+                                <CardGroup>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/SarahWalid.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Sarah Walid</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/YasminElnaggar.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Yasmin Elnagar</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/AbdelrahmanWael.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Abdelrahman Wael</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/AhmedKhaled.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Ahmed Khaled</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/HabibaMohamed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Lamees Kamal</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Software/HabibaMohamed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Yara Yasser</CardTitle>
+                                        <CardSubtitle>Software Team Member</CardSubtitle>
+                                        <CardText>4th Year Software Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+
+                                
+
+                            </CardGroup>
+                        
+                    </UncontrolledCollapse>
+
                     
                 </Container>
             </div>
