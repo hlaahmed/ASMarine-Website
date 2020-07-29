@@ -2,8 +2,8 @@ import React from "react";
 
 // core components
 import {
-    Button,
-    Card,
+    Button, UncontrolledCollapse,
+    Card, CardGroup, CardText, CardImg, CardSubtitle,
     CardBody,
     CardFooter,
     CardTitle,
@@ -83,14 +83,7 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                                         We're responsible for  designing and testing the vehicle software architecture which can be broken down into perception modules, SLAM modules, control modules and vehicle simulations                    </p>
                                 </CardBody>
                                 <CardFooter className="text-center">
-                                    <Button
-                                        className="btn-just-icon btn-neutral ml-1"
-                                        color="link"
-                                        href="https://www.linkedin.com/in/yousefmansy/"
-                                        onClick={() => window.open("https://www.linkedin.com/in/yousefmansy/", "_blank")}
-                                    >
-                                        <i className="fa fa-linkedin" />
-                                    </Button>
+
                                 </CardFooter>
                             </Card >
                         </Col>
@@ -115,13 +108,7 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                     </p>
                                 </CardBody>
                                 <CardFooter className="text-center">
-                                    <Button
-                                        className="btn-just-icon btn-neutral ml-1"
-                                        color="link"
-                                        href="#pablo"
-                                        onClick={() => window.open("https://www.linkedin.com/in/yousefmansy/", "_blank")}                    >
-                                        <i className="fa fa-linkedin" />
-                                    </Button>
+
                                 </CardFooter>
                             </Card>
                         </Col>
@@ -146,14 +133,7 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                     </p>
                                 </CardBody>
                                 <CardFooter className="text-center">
-                                    <Button
-                                        className="btn-just-icon btn-neutral ml-1"
-                                        color="link"
-                                        href="#pablo"
-                                        onClick={(e) => e.preventDefault()}
-                                    >
-                                        <i className="fa fa-linkedin" />
-                                    </Button>
+
                                 </CardFooter>
                             </Card>
                         </Col>
@@ -180,18 +160,199 @@ It’s funny, because the sub teams are right next to me. I live by my own quote
                                 </CardBody>
                                 <CardFooter className="text-center">
 
-                                    <Button
-                                        className="btn-just-icon btn-neutral ml-1"
-                                        color="link"
-                                        href="#pablo"
-                                        onClick={(e) => e.preventDefault()}
-                                    >
-                                        <i className="fa fa-linkedin" />
-                                    </Button>
+
                                 </CardFooter>
                             </Card>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col md="3">
+                            <Button
+                                className=" btn-neutral ml-1"
+                                color="link"
+                                href="#pablo"
+                                onClick={() => window.open("https://www.linkedin.com/in/yousefmansy/", "_blank")}                    >
+                                Learn More
+                                    </Button>
+                        </Col>
+                        <Col md="3">
+                            <Button
+                                className=" btn-neutral ml-1"
+                                color="link"
+                                href="#pablo"
+                                id="toggler3">
+                                Learn More
+                                    </Button>
+                        </Col>
+                        <Col md="3">
+                            <Button
+                                className=" btn-neutral ml-1"
+                                color="link"
+                                href="#pablo"
+                                id="toggler2">
+                                Learn More
+                                    </Button>
+                        </Col>
+                        <Col md="3">
+
+                            <Button
+                                className=" btn-neutral ml-1"
+                                color="link"
+                                href="#pablo"
+                                id="toggler"                   >
+                                Learn More
+                                    </Button>
+                        </Col>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    </Row>
+
+                    <UncontrolledCollapse toggler="#toggler" >
+
+
+                        <Col className="ml-auto mr-auto" >
+                            <h2 className="title" >Business Team</h2>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="3">
+                            <Card inverse className="card-avatar">
+                                <CardImg src={require("assets/img/team/Business/Amr.webp")} alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle style={{ fontSize: "20px" }}>Amr Mohamed</CardTitle>
+                                    <CardSubtitle>Business Team Leader</CardSubtitle>
+                                    <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="6">
+
+                            <CardGroup >
+
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Business/sarah.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Sarah Walid</CardTitle>
+                                        <CardSubtitle>IT Member</CardSubtitle>
+                                        <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Business/Muhammed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Muhammed Ghazaly</CardTitle>
+                                        <CardSubtitle>Media and Marketing Member</CardSubtitle>
+                                        <CardText>2nd Year Mechatronics Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                            </CardGroup>
+                        </Col>
+                    </UncontrolledCollapse>
+
+                    <UncontrolledCollapse toggler="#toggler2" >
+
+
+                        <Col className="ml-auto mr-auto" >
+                            <h2 className="title" >Mechanical Team</h2>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="3">
+                            <Card inverse className="card-avatar">
+                                <CardImg src={require("assets/img/team/Mechanical/Ibrahim.webp")} alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle style={{ fontSize: "20px" }}>Ibrahim Hany</CardTitle>
+                                    <CardSubtitle>Mechanical Team Leader</CardSubtitle>
+                                    <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+
+                            <CardGroup >
+
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Mechanical/Mohamed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Mohamed Raafat</CardTitle>
+                                        <CardSubtitle>Mechanical Team Member</CardSubtitle>
+                                        <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Mechanical/Reem.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Reem Khaled</CardTitle>
+                                        <CardSubtitle>Mechanical Team Member</CardSubtitle>
+                                        <CardText>2nd Year Mechanical Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Mechanical/Noura.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Noura Soliman</CardTitle>
+                                        <CardSubtitle>Mechanical Team Member</CardSubtitle>
+                                        <CardText>2nd Year Mechanical Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Mechanical/Mohamed2.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "16px" }}>Mohamed Mahmoud</CardTitle>
+                                        <CardSubtitle>Mechanical Team Member</CardSubtitle>
+                                        <CardText>2nd Year Mechanical Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Mechanical/Ahmed.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Ahmed Ashraf</CardTitle>
+                                        <CardSubtitle>Mechanical Team Member</CardSubtitle>
+                                        <CardText>2nd Year Mechanical Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                            </CardGroup>
+                        
+                    </UncontrolledCollapse>
+
+                    
+                    <UncontrolledCollapse toggler="#toggler3" >
+
+
+                        <Col className="ml-auto mr-auto" >
+                            <h2 className="title" >Electrical Team</h2>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="3">
+                            <Card inverse className="card-avatar">
+                                <CardImg src={require("assets/img/team/Electrical/Zeyad.webp")} alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle style={{ fontSize: "20px" }}>Zeyad Mohamed</CardTitle>
+                                    <CardSubtitle>Electrical Team Leader</CardSubtitle>
+                                    <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col className="ml-auto mr-auto" md="6">
+
+                            <CardGroup >
+
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Electrical/Adel.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Adel Hamed</CardTitle>
+                                        <CardSubtitle>Electrical Team Member</CardSubtitle>
+                                        <CardText>4th Year Mechatronics Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                                <Card className="card-avatar">
+                                    <CardImg src={require("assets/img/team/Electrical/Zeyad2.webp")} alt="Card image cap" />
+                                    <CardBody>
+                                        <CardTitle style={{ fontSize: "20px" }}>Zeyad Hossam</CardTitle>
+                                        <CardSubtitle>Electrical Team Member</CardSubtitle>
+                                        <CardText>3rd Year Communications Engineering Student</CardText>
+                                    </CardBody>
+                                </Card>
+                            </CardGroup>
+                        </Col>
+                    </UncontrolledCollapse>
+                    
                 </Container>
             </div>
         </>
