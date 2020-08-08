@@ -99,7 +99,12 @@ function TeamsSection() {
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                  onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/samer-mansour-564329123/",
+                        "_blank"
+                      )
+                    }
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
