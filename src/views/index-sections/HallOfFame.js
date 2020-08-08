@@ -111,7 +111,7 @@ function HallOfFame(props) {
                     href="#pablo"
                     onClick={() =>
                       window.open(
-                        "https://www.linkedin.com/in/yousefmansy/",
+                        "https://www.linkedin.com/in/amr-abdelghany-a9990b169/",
                         "_blank"
                       )
                     }
