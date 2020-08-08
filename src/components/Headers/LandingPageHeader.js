@@ -58,7 +58,7 @@ function LandingPageHeader() {
                   fontSize: "2.3em",
                 }}
               >
-                Intersted ?
+                Interested ?
               </h3>
               <Button
                 href="/learn-more"
@@ -70,7 +70,7 @@ function LandingPageHeader() {
                   marginBottom: "10px",
                 }}
               >
-                Clcik Here
+                Click Here
               </Button>
             </section>
           </div>
