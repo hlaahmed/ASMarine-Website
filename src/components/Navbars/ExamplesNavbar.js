@@ -102,17 +102,6 @@ function ExamplesNavbar() {
                 Home
               </NavLink>
             </NavItem>
-
-            <NavItem>
-              <NavLink to="/gallery" tag={Link}>
-                Gallery
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/auv" tag={Link}>
-                AUV Overview
-              </NavLink>
-            </NavItem>
             <NavItem>
               <NavHashLink
                 to="/index#sectionaboutus"
@@ -141,6 +130,17 @@ function ExamplesNavbar() {
                 <NavLink>Hall Of Fame</NavLink>
               </NavHashLink>
             </NavItem>
+            <NavItem>
+              <NavLink to="/gallery" tag={Link}>
+                Gallery
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/auv" tag={Link}>
+                AUV Overview
+              </NavLink>
+            </NavItem>
+
             <NavItem>
               <NavHashLink
                 to="/index#sectioncarousel"
