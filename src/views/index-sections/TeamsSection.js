@@ -93,14 +93,6 @@ function TeamsSection() {
                       </h6>
                     </div>
                   </a>
-                  <p
-                    className="card-description text-center"
-                    style={{ padding: 0, margin: 0 }}
-                  >
-                    "If your actions inspire others to dream more, learn more,
-                    do more and become more, you are a leader."
-                    <br></br> -John Quincy Adams
-                  </p>
                 </CardBody>
                 <CardFooter className="text-center">
                   <Button
