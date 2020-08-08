@@ -129,16 +129,16 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <NavHashLink
+                to="/index#sectionhalloffame"
                 scroll={el => {
                   const y =
                     el.getBoundingClientRect().top + window.pageYOffset - 120;
 
                   window.scrollTo({ top: y, behavior: "smooth" });
                 }}
-                to="/index#sectionhalloffame"
                 style={{ fontWeight: "Bold" }}
               >
-                <NavLink tag={Link}>Hall Of Fame</NavLink>
+                <NavLink>Hall Of Fame</NavLink>
               </NavHashLink>
             </NavItem>
             <NavItem>
