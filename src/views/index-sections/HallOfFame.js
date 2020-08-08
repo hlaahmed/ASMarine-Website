@@ -108,7 +108,6 @@ function HallOfFame(props) {
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
-                    href="#pablo"
                     onClick={() =>
                       window.open(
                         "https://www.linkedin.com/in/amr-abdelghany-a9990b169/",
@@ -158,7 +157,12 @@ function HallOfFame(props) {
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                     onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/perihane-youssef-00226a105/",
+                        "_blank"
+                      )
+                    }
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
@@ -203,7 +207,12 @@ function HallOfFame(props) {
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/panc%C3%A9-ibrahim1995/",
+                        "_blank"
+                      )
+                    }
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
