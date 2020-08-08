@@ -32,6 +32,10 @@
     "react-youtube": "^7.11.2",
     "reactstrap": "8.4.1"
   },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": " npm cache clean --force &&  npm install && react-scripts build ",
@@ -41,9 +45,6 @@
     "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
     "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css --source-map true",
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
@@ -67,9 +68,5 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-append-prepend": "1.0.8"
-  },
-"engines": {
-    "node": "12.x",
-"npm": "6.x"
   }
 }
